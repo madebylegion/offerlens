@@ -1,0 +1,28 @@
+{
+  "name": "offerlens",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Brand-deal DM triage that runs on your own laptop (Gemini Nano via Firebase AI Logic hybrid inference), with a cloud-only negotiation coach.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4173 --strictPort",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "eval": "node scripts/eval.mjs",
+    "e2e": "node scripts/e2e.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/instrument-sans": "^5.3.0",
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "firebase": "^13.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8",
+    "vitest": "^5.1.0"
+  }
+}

@@ -1,0 +1,415 @@
+[
+  {
+    "id": "e01",
+    "channel": "email",
+    "from_email": "deals@example.com",
+    "received": "2026-11-03T08:00:00Z",
+    "body": "Hello, this is Fernhollow Tea. We would like to sponsor one YouTube video for £2,000. We would feature it on our own channels for 90 days. No exclusivity. Payment net 30.",
+    "expect": {
+      "paid": true,
+      "rate_amount": 2000,
+      "currency": "GBP",
+      "deliverables": [
+        "video"
+      ],
+      "usage_months": 3,
+      "usage_media": "organic_only",
+      "exclusivity_days": 0,
+      "payment_days": 30,
+      "column": "worth"
+    }
+  },
+  {
+    "id": "e02",
+    "channel": "dm",
+    "from_handle": "@demo_cobaltine",
+    "received": "2026-11-03T09:00:00Z",
+    "body": "Cobaltine Audio here. We can pay $600 for 2 Reels. We want to run them as paid ads for 6 months. You would be paid within 14 days of delivery.",
+    "expect": {
+      "paid": true,
+      "rate_amount": 600,
+      "currency": "USD",
+      "deliverables": [
+        "reel",
+        "reel"
+      ],
+      "usage_months": 6,
+      "usage_media": "paid_ads",
+      "exclusivity_days": 0,
+      "payment_days": 14,
+      "column": "negotiate"
+    }
+  },
+  {
+    "id": "e03",
+    "channel": "dm",
+    "from_handle": "@demo_tallowmere",
+    "received": "2026-11-04T10:00:00Z",
+    "body": "Hi! Tallowmere Candles would love to send you our new candle set (worth about $80) in exchange for 1 Reel and 2 Stories. No budget this round, sorry!",
+    "expect": {
+      "paid": false,
+      "rate_amount": 0,
+      "currency": "NONE",
+      "deliverables": [
+        "reel",
+        "story",
+        "story"
+      ],
+      "usage_months": 0,
+      "usage_media": "unspecified",
+      "exclusivity_days": 0,
+      "payment_days": 0,
+      "column": "negotiate"
+    }
+  },
+  {
+    "id": "e04",
+    "channel": "email",
+    "from_email": "legal@example.com",
+    "received": "2026-11-04T11:00:00Z",
+    "body": "Dear creator, Wrenfield Books offers RM 3,000 for 1 video. We receive full rights to use the video in perpetuity across all media, including TV and out-of-home. Payment is net 45.",
+    "expect": {
+      "paid": true,
+      "rate_amount": 3000,
+      "currency": "MYR",
+      "deliverables": [
+        "video"
+      ],
+      "usage_months": "perpetual",
+      "usage_media": "all_media",
+      "exclusivity_days": 0,
+      "payment_days": 45,
+      "column": "walk"
+    }
+  },
+  {
+    "id": "e05",
+    "channel": "email",
+    "from_email": "hello@example.com",
+    "received": "2026-11-05T12:00:00Z",
+    "body": "Plumbline Tools proposes $4,500 for 3 posts over two months. We ask for 6 months of exclusivity in the tools category. We would only repost organically. Payment net 30.",
+    "expect": {
+      "paid": true,
+      "rate_amount": 4500,
+      "currency": "USD",
+      "deliverables": [
+        "post",
+        "post",
+        "post"
+      ],
+      "usage_months": 0,
+      "usage_media": "organic_only",
+      "exclusivity_days": 180,
+      "payment_days": 30,
+      "column": "negotiate"
+    }
+  },
+  {
+    "id": "e06",
+    "channel": "dm",
+    "from_handle": "@demo_kestrel_mgr",
+    "received": "2026-11-05T13:00:00Z",
+    "body": "I am the brand manager at Kestrelwick Games. You must cover a $120 onboarding fee by crypto before we send the $2,500 payment for 1 video. This is urgent, offer ends tonight.",
+    "expect": {
+      "paid": true,
+      "rate_amount": 2500,
+      "currency": "USD",
+      "deliverables": [
+        "video"
+      ],
+      "usage_months": 0,
+      "usage_media": "unspecified",
+      "exclusivity_days": 0,
+      "payment_days": 0,
+      "column": "walk"
+    }
+  },
+  {
+    "id": "e07",
+    "channel": "email",
+    "from_email": "team@example.com",
+    "received": "2026-11-06T08:30:00Z",
+    "body": "Ashgrove Skincare would like to pay €1,200 for 1 Reel and 1 post. Payment 90 days after the post goes live. We would use them on our site and social for 12 months, organic only.",
+    "expect": {
+      "paid": true,
+      "rate_amount": 1200,
+      "currency": "EUR",
+      "deliverables": [
+        "reel",
+        "post"
+      ],
+      "usage_months": 12,
+      "usage_media": "organic_only",
+      "exclusivity_days": 0,
+      "payment_days": 90,
+      "column": "negotiate"
+    }
+  },
+  {
+    "id": "e08",
+    "channel": "dm",
+    "from_handle": "@demo_meadowgate",
+    "received": "2026-11-06T09:30:00Z",
+    "body": "Hey! Meadowgate Pet Co loves your content and we would love to collaborate sometime. Let us know what you charge and we will see.",
+    "expect": {
+      "paid": false,
+      "rate_amount": 0,
+      "currency": "NONE",
+      "deliverables": [],
+      "usage_months": 0,
+      "usage_media": "unspecified",
+      "exclusivity_days": 0,
+      "payment_days": 0,
+      "column": "negotiate"
+    }
+  },
+  {
+    "id": "e09",
+    "channel": "email",
+    "from_email": "partners@example.com",
+    "received": "2026-11-07T10:00:00Z",
+    "body": "Larkspur Linens offers $2,200 for 1 video. We would boost it as a paid ad for 3 months (whitelisting). Payment net 30.",
+    "expect": {
+      "paid": true,
+      "rate_amount": 2200,
+      "currency": "USD",
+      "deliverables": [
+        "video"
+      ],
+      "usage_months": 3,
+      "usage_media": "paid_ads",
+      "exclusivity_days": 0,
+      "payment_days": 30,
+      "column": "negotiate"
+    }
+  },
+  {
+    "id": "e10",
+    "channel": "dm",
+    "from_handle": "@demo_ironvale",
+    "received": "2026-11-07T11:00:00Z",
+    "body": "Ironvale Fitness: $1,500 for 2 Reels, net 15. We will need partner-ad access to your account so we can run them as ads for 4 months.",
+    "expect": {
+      "paid": true,
+      "rate_amount": 1500,
+      "currency": "USD",
+      "deliverables": [
+        "reel",
+        "reel"
+      ],
+      "usage_months": 4,
+      "usage_media": "paid_ads",
+      "exclusivity_days": 0,
+      "payment_days": 15,
+      "column": "negotiate"
+    }
+  },
+  {
+    "id": "e11",
+    "channel": "dm",
+    "from_handle": "@demo_oakmoor",
+    "received": "2026-11-08T08:00:00Z",
+    "body": "Quick one from Oakmoor Bikes: $950 for a set of 3 Stories. We would share them on our own page for 30 days. Paid within 7 days. No exclusivity.",
+    "expect": {
+      "paid": true,
+      "rate_amount": 950,
+      "currency": "USD",
+      "deliverables": [
+        "story",
+        "story",
+        "story"
+      ],
+      "usage_months": 1,
+      "usage_media": "organic_only",
+      "exclusivity_days": 0,
+      "payment_days": 7,
+      "column": "worth"
+    }
+  },
+  {
+    "id": "e12",
+    "channel": "email",
+    "from_email": "hi@example.com",
+    "received": "2026-11-08T09:00:00Z",
+    "body": "Saltmarsh Snacks would pay £700 for 1 Reel. We would use it on our own channels for 8 weeks. Exclusivity for 2 weeks. Payment net 14.",
+    "expect": {
+      "paid": true,
+      "rate_amount": 700,
+      "currency": "GBP",
+      "deliverables": [
+        "reel"
+      ],
+      "usage_months": 2,
+      "usage_media": "organic_only",
+      "exclusivity_days": 14,
+      "payment_days": 14,
+      "column": "worth"
+    }
+  },
+  {
+    "id": "e13",
+    "channel": "dm",
+    "from_handle": "@demo_pinecrest_help",
+    "received": "2026-11-09T10:00:00Z",
+    "body": "Your account was picked for a $3,000 collab with Pinecrest Pens. Verify your creator profile at https://verify-pinecrest.example.net/claim within 24 hours or the offer expires.",
+    "expect": {
+      "paid": true,
+      "rate_amount": 3000,
+      "currency": "USD",
+      "deliverables": [],
+      "usage_months": 0,
+      "usage_media": "unspecified",
+      "exclusivity_days": 0,
+      "payment_days": 0,
+      "column": "walk"
+    }
+  },
+  {
+    "id": "e14",
+    "channel": "dm",
+    "from_handle": "@demo_dunmere",
+    "received": "2026-11-09T11:00:00Z",
+    "body": "Dunmere Travel here. We can offer five hundred dollars for two Stories, paid in 10 days.",
+    "expect": {
+      "paid": true,
+      "rate_amount": 500,
+      "currency": "USD",
+      "deliverables": [
+        "story",
+        "story"
+      ],
+      "usage_months": 0,
+      "usage_media": "unspecified",
+      "exclusivity_days": 0,
+      "payment_days": 10,
+      "column": "worth"
+    }
+  },
+  {
+    "id": "e15",
+    "channel": "email",
+    "from_email": "live@example.com",
+    "received": "2026-11-10T08:00:00Z",
+    "body": "Hello from Brackenfell Outfitters. $1,100 for 1 live stream (about 90 minutes). We may clip it for our own channels for 6 months. Payment net 30. No exclusivity.",
+    "expect": {
+      "paid": true,
+      "rate_amount": 1100,
+      "currency": "USD",
+      "deliverables": [
+        "live"
+      ],
+      "usage_months": 6,
+      "usage_media": "organic_only",
+      "exclusivity_days": 0,
+      "payment_days": 30,
+      "column": "negotiate"
+    }
+  },
+  {
+    "id": "e16",
+    "channel": "email",
+    "from_email": "ugc@example.com",
+    "received": "2026-11-10T09:00:00Z",
+    "body": "Thistledown Home needs 5 UGC clips for our ads. We pay $75 each, so $375 in total. Ads usage for 12 months. Net 30.",
+    "expect": {
+      "paid": true,
+      "rate_amount": 375,
+      "currency": "USD",
+      "deliverables": [
+        "ugc",
+        "ugc",
+        "ugc",
+        "ugc",
+        "ugc"
+      ],
+      "usage_months": 12,
+      "usage_media": "paid_ads",
+      "exclusivity_days": 0,
+      "payment_days": 30,
+      "column": "negotiate"
+    }
+  },
+  {
+    "id": "e17",
+    "channel": "email",
+    "from_email": "media@example.com",
+    "received": "2026-11-11T08:00:00Z",
+    "body": "Greywater Mobile offers RM 1,800 for 1 post and 1 Story. We take all media rights for 12 months. Net 30.",
+    "expect": {
+      "paid": true,
+      "rate_amount": 1800,
+      "currency": "MYR",
+      "deliverables": [
+        "post",
+        "story"
+      ],
+      "usage_months": 12,
+      "usage_media": "all_media",
+      "exclusivity_days": 0,
+      "payment_days": 30,
+      "column": "negotiate"
+    }
+  },
+  {
+    "id": "e18",
+    "channel": "dm",
+    "from_handle": "@demo_coldbrewco",
+    "received": "2026-11-11T09:00:00Z",
+    "body": "Product only from Foxglove Cold Brew: 2 bottles of cold brew. In return we want 1 Reel and a perpetual license to use it anywhere.",
+    "expect": {
+      "paid": false,
+      "rate_amount": 0,
+      "currency": "NONE",
+      "deliverables": [
+        "reel"
+      ],
+      "usage_months": "perpetual",
+      "usage_media": "unspecified",
+      "exclusivity_days": 0,
+      "payment_days": 0,
+      "column": "walk"
+    }
+  },
+  {
+    "id": "e19",
+    "channel": "email",
+    "from_email": "collabs@example.com",
+    "received": "2026-11-12T08:00:00Z",
+    "body": "Hello, Marlowe Bikes proposes EUR 2,500 for 2 posts and 1 Reel. Usage 12 months, organic only. Exclusivity 30 days. Payment net 30.",
+    "expect": {
+      "paid": true,
+      "rate_amount": 2500,
+      "currency": "EUR",
+      "deliverables": [
+        "post",
+        "post",
+        "reel"
+      ],
+      "usage_months": 12,
+      "usage_media": "organic_only",
+      "exclusivity_days": 30,
+      "payment_days": 30,
+      "column": "negotiate"
+    }
+  },
+  {
+    "id": "e20",
+    "channel": "email",
+    "from_email": "yt@example.com",
+    "received": "2026-11-12T09:00:00Z",
+    "body": "Hi, Cinderbrook Tools would pay $800 for a 60-second YouTube integration. We would link it in our newsletter for 1 month. Pay on publish, no later than 10 days.",
+    "expect": {
+      "paid": true,
+      "rate_amount": 800,
+      "currency": "USD",
+      "deliverables": [
+        "video"
+      ],
+      "usage_months": 1,
+      "usage_media": "organic_only",
+      "exclusivity_days": 0,
+      "payment_days": 10,
+      "column": "worth"
+    }
+  }
+]

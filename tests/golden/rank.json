@@ -1,0 +1,62 @@
+[
+  {
+    "id": "m01",
+    "column": "worth",
+    "score": 100
+  },
+  {
+    "id": "m02",
+    "column": "worth",
+    "score": 100
+  },
+  {
+    "id": "m03",
+    "column": "worth",
+    "score": 100
+  },
+  {
+    "id": "m04",
+    "column": "negotiate",
+    "score": 83
+  },
+  {
+    "id": "m07",
+    "column": "negotiate",
+    "score": 72
+  },
+  {
+    "id": "m06",
+    "column": "negotiate",
+    "score": 71
+  },
+  {
+    "id": "m05",
+    "column": "negotiate",
+    "score": 55
+  },
+  {
+    "id": "m10",
+    "column": "walk",
+    "score": 34
+  },
+  {
+    "id": "m08",
+    "column": "walk",
+    "score": 7
+  },
+  {
+    "id": "m09",
+    "column": "walk",
+    "score": 0
+  },
+  {
+    "id": "m11",
+    "column": "walk",
+    "score": 0
+  },
+  {
+    "id": "m12",
+    "column": "walk",
+    "score": 0
+  }
+]

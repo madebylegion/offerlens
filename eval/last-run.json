@@ -1,0 +1,968 @@
+{
+ "summary": {
+  "messages": 20,
+  "fields": 160,
+  "nano_alone_accuracy": "91.9%",
+  "final_accuracy": "93.1%",
+  "all_on_device": true,
+  "column_agreement": "19/20",
+  "latency_ms": {
+   "p50": 5164,
+   "p95": 8823,
+   "max": 8823
+  }
+ },
+ "rows": [
+  {
+   "id": "e01",
+   "retried": 0,
+   "route": "ON_DEVICE",
+   "ms": 8823,
+   "column": "worth",
+   "wantColumn": "worth",
+   "missModel": [
+    "usage_media"
+   ],
+   "missFinal": [],
+   "final": {
+    "brand_alias": "Fernhollow Tea",
+    "paid": true,
+    "rate_amount": 2000,
+    "currency": "GBP",
+    "deliverables": [
+     "video"
+    ],
+    "usage_months": 3,
+    "usage_media": "organic_only",
+    "exclusivity_days": 0,
+    "payment_days": 30,
+    "disclosure_required": true,
+    "red_flags": []
+   },
+   "model": {
+    "brand_alias": "Fernhollow Tea",
+    "paid": true,
+    "rate_amount": 2000,
+    "currency": "GBP",
+    "deliverables": [
+     "video"
+    ],
+    "usage_months": 3,
+    "usage_media": "unspecified",
+    "exclusivity_days": 0,
+    "payment_days": 30,
+    "disclosure_required": false,
+    "red_flags": [
+     "slow_payment"
+    ]
+   }
+  },
+  {
+   "id": "e02",
+   "retried": 0,
+   "route": "ON_DEVICE",
+   "ms": 4234,
+   "column": "negotiate",
+   "wantColumn": "negotiate",
+   "missModel": [],
+   "missFinal": [],
+   "final": {
+    "brand_alias": "Cobaltine Audio",
+    "paid": true,
+    "rate_amount": 600,
+    "currency": "USD",
+    "deliverables": [
+     "reel",
+     "reel"
+    ],
+    "usage_months": 6,
+    "usage_media": "paid_ads",
+    "exclusivity_days": 0,
+    "payment_days": 14,
+    "disclosure_required": true,
+    "red_flags": []
+   },
+   "model": {
+    "brand_alias": "Cobaltine Audio",
+    "paid": true,
+    "rate_amount": 600,
+    "currency": "USD",
+    "deliverables": [
+     "reel",
+     "reel"
+    ],
+    "usage_months": 6,
+    "usage_media": "paid_ads",
+    "exclusivity_days": 0,
+    "payment_days": 14,
+    "disclosure_required": false,
+    "red_flags": []
+   }
+  },
+  {
+   "id": "e03",
+   "retried": 0,
+   "route": "ON_DEVICE",
+   "ms": 3414,
+   "column": "negotiate",
+   "wantColumn": "negotiate",
+   "missModel": [
+    "currency",
+    "usage_media"
+   ],
+   "missFinal": [
+    "usage_media"
+   ],
+   "final": {
+    "brand_alias": "Tallowmere Candles",
+    "paid": false,
+    "rate_amount": 0,
+    "currency": "NONE",
+    "deliverables": [
+     "reel",
+     "story",
+     "story"
+    ],
+    "usage_months": 0,
+    "usage_media": "organic_only",
+    "exclusivity_days": 0,
+    "payment_days": 0,
+    "disclosure_required": true,
+    "red_flags": [
+     "gifted_only"
+    ]
+   },
+   "model": {
+    "brand_alias": "Tallowmere Candles",
+    "paid": false,
+    "rate_amount": 0,
+    "currency": "USD",
+    "deliverables": [
+     "reel",
+     "story",
+     "story"
+    ],
+    "usage_months": 0,
+    "usage_media": "organic_only",
+    "exclusivity_days": 0,
+    "payment_days": 0,
+    "disclosure_required": false,
+    "red_flags": [
+     "gifted_only"
+    ]
+   }
+  },
+  {
+   "id": "e04",
+   "retried": 0,
+   "route": "ON_DEVICE",
+   "ms": 4867,
+   "column": "walk",
+   "wantColumn": "walk",
+   "missModel": [],
+   "missFinal": [],
+   "final": {
+    "brand_alias": "Wrenfield Books",
+    "paid": true,
+    "rate_amount": 3000,
+    "currency": "MYR",
+    "deliverables": [
+     "video"
+    ],
+    "usage_months": "perpetual",
+    "usage_media": "all_media",
+    "exclusivity_days": 0,
+    "payment_days": 45,
+    "disclosure_required": true,
+    "red_flags": [
+     "perpetual_usage",
+     "all_media_usage"
+    ]
+   },
+   "model": {
+    "brand_alias": "Wrenfield Books",
+    "paid": true,
+    "rate_amount": 3000,
+    "currency": "MYR",
+    "deliverables": [
+     "video"
+    ],
+    "usage_months": "perpetual",
+    "usage_media": "all_media",
+    "exclusivity_days": 0,
+    "payment_days": 45,
+    "disclosure_required": false,
+    "red_flags": [
+     "perpetual_usage"
+    ]
+   }
+  },
+  {
+   "id": "e05",
+   "retried": 0,
+   "route": "ON_DEVICE",
+   "ms": 6912,
+   "column": "negotiate",
+   "wantColumn": "negotiate",
+   "missModel": [
+    "usage_months",
+    "exclusivity_days"
+   ],
+   "missFinal": [
+    "usage_months"
+   ],
+   "final": {
+    "brand_alias": "Plumbline Tools",
+    "paid": true,
+    "rate_amount": 4500,
+    "currency": "USD",
+    "deliverables": [
+     "post",
+     "post",
+     "post"
+    ],
+    "usage_months": 6,
+    "usage_media": "organic_only",
+    "exclusivity_days": 180,
+    "payment_days": 30,
+    "disclosure_required": true,
+    "red_flags": [
+     "long_exclusivity"
+    ]
+   },
+   "model": {
+    "brand_alias": "Plumbline Tools",
+    "paid": true,
+    "rate_amount": 4500,
+    "currency": "USD",
+    "deliverables": [
+     "post",
+     "post",
+     "post"
+    ],
+    "usage_months": 6,
+    "usage_media": "organic_only",
+    "exclusivity_days": 0,
+    "payment_days": 30,
+    "disclosure_required": false,
+    "red_flags": [
+     "slow_payment"
+    ]
+   }
+  },
+  {
+   "id": "e06",
+   "retried": 0,
+   "route": "ON_DEVICE",
+   "ms": 6781,
+   "column": "walk",
+   "wantColumn": "walk",
+   "missModel": [],
+   "missFinal": [
+    "rate_amount"
+   ],
+   "final": {
+    "brand_alias": "Kestrelwick Games",
+    "paid": true,
+    "rate_amount": 120,
+    "currency": "USD",
+    "deliverables": [
+     "video"
+    ],
+    "usage_months": 0,
+    "usage_media": "unspecified",
+    "exclusivity_days": 0,
+    "payment_days": 0,
+    "disclosure_required": true,
+    "red_flags": [
+     "upfront_fee",
+     "off_platform_payment",
+     "urgency_pressure"
+    ]
+   },
+   "model": {
+    "brand_alias": "Kestrelwick Games",
+    "paid": true,
+    "rate_amount": 2500,
+    "currency": "USD",
+    "deliverables": [
+     "video"
+    ],
+    "usage_months": 0,
+    "usage_media": "unspecified",
+    "exclusivity_days": 0,
+    "payment_days": 0,
+    "disclosure_required": false,
+    "red_flags": [
+     "upfront_fee",
+     "urgency_pressure"
+    ]
+   }
+  },
+  {
+   "id": "e07",
+   "retried": 0,
+   "route": "ON_DEVICE",
+   "ms": 4565,
+   "column": "negotiate",
+   "wantColumn": "negotiate",
+   "missModel": [],
+   "missFinal": [
+    "deliverables"
+   ],
+   "final": {
+    "brand_alias": "Ashgrove Skincare",
+    "paid": true,
+    "rate_amount": 1200,
+    "currency": "EUR",
+    "deliverables": [
+     "reel",
+     "post",
+     "post"
+    ],
+    "usage_months": 12,
+    "usage_media": "organic_only",
+    "exclusivity_days": 0,
+    "payment_days": 90,
+    "disclosure_required": true,
+    "red_flags": [
+     "slow_payment"
+    ]
+   },
+   "model": {
+    "brand_alias": "Ashgrove Skincare",
+    "paid": true,
+    "rate_amount": 1200,
+    "currency": "EUR",
+    "deliverables": [
+     "reel",
+     "post"
+    ],
+    "usage_months": 12,
+    "usage_media": "organic_only",
+    "exclusivity_days": 0,
+    "payment_days": 90,
+    "disclosure_required": false,
+    "red_flags": []
+   }
+  },
+  {
+   "id": "e08",
+   "retried": 0,
+   "route": "ON_DEVICE",
+   "ms": 5520,
+   "column": "negotiate",
+   "wantColumn": "negotiate",
+   "missModel": [
+    "deliverables"
+   ],
+   "missFinal": [
+    "deliverables"
+   ],
+   "final": {
+    "brand_alias": "Meadowgate Pet Co",
+    "paid": false,
+    "rate_amount": 0,
+    "currency": "NONE",
+    "deliverables": [
+     "reel",
+     "story",
+     "post",
+     "video",
+     "short",
+     "live",
+     "ugc",
+     "other"
+    ],
+    "usage_months": 0,
+    "usage_media": "unspecified",
+    "exclusivity_days": 0,
+    "payment_days": 0,
+    "disclosure_required": false,
+    "red_flags": [
+     "vague_scope"
+    ]
+   },
+   "model": {
+    "brand_alias": "Meadowgate Pet Co",
+    "paid": false,
+    "rate_amount": 0,
+    "currency": "NONE",
+    "deliverables": [
+     "reel",
+     "story",
+     "post",
+     "video",
+     "short",
+     "live",
+     "ugc",
+     "other"
+    ],
+    "usage_months": 0,
+    "usage_media": "unspecified",
+    "exclusivity_days": 0,
+    "payment_days": 0,
+    "disclosure_required": false,
+    "red_flags": [
+     "vague_scope"
+    ]
+   }
+  },
+  {
+   "id": "e09",
+   "retried": 0,
+   "route": "ON_DEVICE",
+   "ms": 4862,
+   "column": "negotiate",
+   "wantColumn": "negotiate",
+   "missModel": [],
+   "missFinal": [],
+   "final": {
+    "brand_alias": "Larkspur Linens",
+    "paid": true,
+    "rate_amount": 2200,
+    "currency": "USD",
+    "deliverables": [
+     "video"
+    ],
+    "usage_months": 3,
+    "usage_media": "paid_ads",
+    "exclusivity_days": 0,
+    "payment_days": 30,
+    "disclosure_required": true,
+    "red_flags": []
+   },
+   "model": {
+    "brand_alias": "Larkspur Linens",
+    "paid": true,
+    "rate_amount": 2200,
+    "currency": "USD",
+    "deliverables": [
+     "video"
+    ],
+    "usage_months": 3,
+    "usage_media": "paid_ads",
+    "exclusivity_days": 0,
+    "payment_days": 30,
+    "disclosure_required": false,
+    "red_flags": []
+   }
+  },
+  {
+   "id": "e10",
+   "retried": 0,
+   "route": "ON_DEVICE",
+   "ms": 6561,
+   "column": "negotiate",
+   "wantColumn": "negotiate",
+   "missModel": [],
+   "missFinal": [],
+   "final": {
+    "brand_alias": "Ironvale Fitness",
+    "paid": true,
+    "rate_amount": 1500,
+    "currency": "USD",
+    "deliverables": [
+     "reel",
+     "reel"
+    ],
+    "usage_months": 4,
+    "usage_media": "paid_ads",
+    "exclusivity_days": 0,
+    "payment_days": 15,
+    "disclosure_required": true,
+    "red_flags": [
+     "ad_account_access"
+    ]
+   },
+   "model": {
+    "brand_alias": "Ironvale Fitness",
+    "paid": true,
+    "rate_amount": 1500,
+    "currency": "USD",
+    "deliverables": [
+     "reel",
+     "reel"
+    ],
+    "usage_months": 4,
+    "usage_media": "paid_ads",
+    "exclusivity_days": 0,
+    "payment_days": 15,
+    "disclosure_required": false,
+    "red_flags": [
+     "ad_account_access"
+    ]
+   }
+  },
+  {
+   "id": "e11",
+   "retried": 0,
+   "route": "ON_DEVICE",
+   "ms": 4393,
+   "column": "worth",
+   "wantColumn": "worth",
+   "missModel": [
+    "deliverables"
+   ],
+   "missFinal": [],
+   "final": {
+    "brand_alias": "Oakmoor Bikes",
+    "paid": true,
+    "rate_amount": 950,
+    "currency": "USD",
+    "deliverables": [
+     "story",
+     "story",
+     "story"
+    ],
+    "usage_months": 1,
+    "usage_media": "organic_only",
+    "exclusivity_days": 0,
+    "payment_days": 7,
+    "disclosure_required": true,
+    "red_flags": []
+   },
+   "model": {
+    "brand_alias": "Oakmoor Bikes",
+    "paid": true,
+    "rate_amount": 950,
+    "currency": "USD",
+    "deliverables": [
+     "story"
+    ],
+    "usage_months": 1,
+    "usage_media": "organic_only",
+    "exclusivity_days": 0,
+    "payment_days": 7,
+    "disclosure_required": false,
+    "red_flags": []
+   }
+  },
+  {
+   "id": "e12",
+   "retried": 0,
+   "route": "ON_DEVICE",
+   "ms": 4810,
+   "column": "worth",
+   "wantColumn": "worth",
+   "missModel": [],
+   "missFinal": [],
+   "final": {
+    "brand_alias": "Saltmarsh Snacks",
+    "paid": true,
+    "rate_amount": 700,
+    "currency": "GBP",
+    "deliverables": [
+     "reel"
+    ],
+    "usage_months": 2,
+    "usage_media": "organic_only",
+    "exclusivity_days": 14,
+    "payment_days": 14,
+    "disclosure_required": true,
+    "red_flags": []
+   },
+   "model": {
+    "brand_alias": "Saltmarsh Snacks",
+    "paid": true,
+    "rate_amount": 700,
+    "currency": "GBP",
+    "deliverables": [
+     "reel"
+    ],
+    "usage_months": 2,
+    "usage_media": "organic_only",
+    "exclusivity_days": 14,
+    "payment_days": 14,
+    "disclosure_required": false,
+    "red_flags": [
+     "slow_payment"
+    ]
+   }
+  },
+  {
+   "id": "e13",
+   "retried": 0,
+   "route": "ON_DEVICE",
+   "ms": 5182,
+   "column": "walk",
+   "wantColumn": "walk",
+   "missModel": [
+    "deliverables"
+   ],
+   "missFinal": [
+    "deliverables"
+   ],
+   "final": {
+    "brand_alias": "Pinecrest Pens",
+    "paid": true,
+    "rate_amount": 3000,
+    "currency": "USD",
+    "deliverables": [
+     "reel",
+     "story",
+     "post",
+     "video",
+     "short",
+     "live",
+     "ugc",
+     "other"
+    ],
+    "usage_months": 0,
+    "usage_media": "unspecified",
+    "exclusivity_days": 0,
+    "payment_days": 0,
+    "disclosure_required": true,
+    "red_flags": [
+     "urgency_pressure",
+     "suspicious_link"
+    ]
+   },
+   "model": {
+    "brand_alias": "Pinecrest Pens",
+    "paid": true,
+    "rate_amount": 3000,
+    "currency": "USD",
+    "deliverables": [
+     "reel",
+     "story",
+     "post",
+     "video",
+     "short",
+     "live",
+     "ugc",
+     "other"
+    ],
+    "usage_months": 0,
+    "usage_media": "unspecified",
+    "exclusivity_days": 0,
+    "payment_days": 0,
+    "disclosure_required": false,
+    "red_flags": [
+     "urgency_pressure"
+    ]
+   }
+  },
+  {
+   "id": "e14",
+   "retried": 0,
+   "route": "ON_DEVICE",
+   "ms": 5873,
+   "column": "negotiate",
+   "wantColumn": "worth",
+   "missModel": [],
+   "missFinal": [
+    "paid",
+    "rate_amount",
+    "currency"
+   ],
+   "final": {
+    "brand_alias": "Dunmere Travel",
+    "paid": false,
+    "rate_amount": 0,
+    "currency": "NONE",
+    "deliverables": [
+     "story",
+     "story"
+    ],
+    "usage_months": 0,
+    "usage_media": "unspecified",
+    "exclusivity_days": 0,
+    "payment_days": 10,
+    "disclosure_required": false,
+    "red_flags": []
+   },
+   "model": {
+    "brand_alias": "Dunmere Travel",
+    "paid": true,
+    "rate_amount": 500,
+    "currency": "USD",
+    "deliverables": [
+     "story",
+     "story"
+    ],
+    "usage_months": 0,
+    "usage_media": "unspecified",
+    "exclusivity_days": 0,
+    "payment_days": 10,
+    "disclosure_required": false,
+    "red_flags": []
+   }
+  },
+  {
+   "id": "e15",
+   "retried": 0,
+   "route": "ON_DEVICE",
+   "ms": 6068,
+   "column": "negotiate",
+   "wantColumn": "negotiate",
+   "missModel": [],
+   "missFinal": [],
+   "final": {
+    "brand_alias": "Brackenfell Outfitters",
+    "paid": true,
+    "rate_amount": 1100,
+    "currency": "USD",
+    "deliverables": [
+     "live"
+    ],
+    "usage_months": 6,
+    "usage_media": "organic_only",
+    "exclusivity_days": 0,
+    "payment_days": 30,
+    "disclosure_required": true,
+    "red_flags": []
+   },
+   "model": {
+    "brand_alias": "Brackenfell Outfitters",
+    "paid": true,
+    "rate_amount": 1100,
+    "currency": "USD",
+    "deliverables": [
+     "live"
+    ],
+    "usage_months": 6,
+    "usage_media": "organic_only",
+    "exclusivity_days": 0,
+    "payment_days": 30,
+    "disclosure_required": false,
+    "red_flags": []
+   }
+  },
+  {
+   "id": "e16",
+   "retried": 0,
+   "route": "ON_DEVICE",
+   "ms": 6316,
+   "column": "negotiate",
+   "wantColumn": "negotiate",
+   "missModel": [
+    "rate_amount",
+    "deliverables"
+   ],
+   "missFinal": [
+    "rate_amount"
+   ],
+   "final": {
+    "brand_alias": "Thistledown Home",
+    "paid": true,
+    "rate_amount": 75,
+    "currency": "USD",
+    "deliverables": [
+     "ugc",
+     "ugc",
+     "ugc",
+     "ugc",
+     "ugc"
+    ],
+    "usage_months": 12,
+    "usage_media": "paid_ads",
+    "exclusivity_days": 0,
+    "payment_days": 30,
+    "disclosure_required": true,
+    "red_flags": []
+   },
+   "model": {
+    "brand_alias": "Thistledown Home",
+    "paid": true,
+    "rate_amount": 75,
+    "currency": "USD",
+    "deliverables": [
+     "ugc"
+    ],
+    "usage_months": 12,
+    "usage_media": "paid_ads",
+    "exclusivity_days": 0,
+    "payment_days": 30,
+    "disclosure_required": false,
+    "red_flags": [
+     "slow_payment"
+    ]
+   }
+  },
+  {
+   "id": "e17",
+   "retried": 0,
+   "route": "ON_DEVICE",
+   "ms": 4331,
+   "column": "negotiate",
+   "wantColumn": "negotiate",
+   "missModel": [
+    "usage_media"
+   ],
+   "missFinal": [],
+   "final": {
+    "brand_alias": "Greywater Mobile",
+    "paid": true,
+    "rate_amount": 1800,
+    "currency": "MYR",
+    "deliverables": [
+     "story",
+     "post"
+    ],
+    "usage_months": 12,
+    "usage_media": "all_media",
+    "exclusivity_days": 0,
+    "payment_days": 30,
+    "disclosure_required": true,
+    "red_flags": [
+     "all_media_usage"
+    ]
+   },
+   "model": {
+    "brand_alias": "Greywater Mobile",
+    "paid": true,
+    "rate_amount": 1800,
+    "currency": "MYR",
+    "deliverables": [
+     "post",
+     "story"
+    ],
+    "usage_months": 12,
+    "usage_media": "unspecified",
+    "exclusivity_days": 0,
+    "payment_days": 30,
+    "disclosure_required": false,
+    "red_flags": [
+     "slow_payment"
+    ]
+   }
+  },
+  {
+   "id": "e18",
+   "retried": 0,
+   "route": "ON_DEVICE",
+   "ms": 4267,
+   "column": "walk",
+   "wantColumn": "walk",
+   "missModel": [
+    "currency",
+    "usage_media"
+   ],
+   "missFinal": [
+    "usage_media"
+   ],
+   "final": {
+    "brand_alias": "Foxglove Cold Brew",
+    "paid": false,
+    "rate_amount": 0,
+    "currency": "NONE",
+    "deliverables": [
+     "reel"
+    ],
+    "usage_months": "perpetual",
+    "usage_media": "all_media",
+    "exclusivity_days": 0,
+    "payment_days": 0,
+    "disclosure_required": true,
+    "red_flags": [
+     "gifted_only",
+     "perpetual_usage"
+    ]
+   },
+   "model": {
+    "brand_alias": "Foxglove Cold Brew",
+    "paid": false,
+    "rate_amount": 0,
+    "currency": "USD",
+    "deliverables": [
+     "reel"
+    ],
+    "usage_months": "perpetual",
+    "usage_media": "all_media",
+    "exclusivity_days": 0,
+    "payment_days": 0,
+    "disclosure_required": false,
+    "red_flags": [
+     "perpetual_usage"
+    ]
+   }
+  },
+  {
+   "id": "e19",
+   "retried": 0,
+   "route": "ON_DEVICE",
+   "ms": 5164,
+   "column": "negotiate",
+   "wantColumn": "negotiate",
+   "missModel": [],
+   "missFinal": [],
+   "final": {
+    "brand_alias": "Marlowe Bikes",
+    "paid": true,
+    "rate_amount": 2500,
+    "currency": "EUR",
+    "deliverables": [
+     "reel",
+     "post",
+     "post"
+    ],
+    "usage_months": 12,
+    "usage_media": "organic_only",
+    "exclusivity_days": 30,
+    "payment_days": 30,
+    "disclosure_required": true,
+    "red_flags": []
+   },
+   "model": {
+    "brand_alias": "Marlowe Bikes",
+    "paid": true,
+    "rate_amount": 2500,
+    "currency": "EUR",
+    "deliverables": [
+     "post",
+     "post",
+     "reel"
+    ],
+    "usage_months": 12,
+    "usage_media": "organic_only",
+    "exclusivity_days": 30,
+    "payment_days": 30,
+    "disclosure_required": false,
+    "red_flags": []
+   }
+  },
+  {
+   "id": "e20",
+   "retried": 0,
+   "route": "ON_DEVICE",
+   "ms": 4737,
+   "column": "worth",
+   "wantColumn": "worth",
+   "missModel": [],
+   "missFinal": [],
+   "final": {
+    "brand_alias": "Cinderbrook Tools",
+    "paid": true,
+    "rate_amount": 800,
+    "currency": "USD",
+    "deliverables": [
+     "video"
+    ],
+    "usage_months": 1,
+    "usage_media": "organic_only",
+    "exclusivity_days": 0,
+    "payment_days": 10,
+    "disclosure_required": true,
+    "red_flags": []
+   },
+   "model": {
+    "brand_alias": "Cinderbrook Tools",
+    "paid": true,
+    "rate_amount": 800,
+    "currency": "USD",
+    "deliverables": [
+     "video"
+    ],
+    "usage_months": 1,
+    "usage_media": "organic_only",
+    "exclusivity_days": 0,
+    "payment_days": 10,
+    "disclosure_required": false,
+    "red_flags": [
+     "slow_payment"
+    ]
+   }
+  }
+ ]
+}

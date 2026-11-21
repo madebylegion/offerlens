@@ -1,0 +1,96 @@
+[
+  {
+    "id": "m01",
+    "channel": "dm",
+    "from_handle": "@demo_northbay",
+    "from_email": "maya@example.com",
+    "received": "2026-11-12T09:14:00Z",
+    "body": "Hi! I'm Maya from Northbay Bottle Co. We love your kitchen-gadget Reels. We'd like to pay you $1,800 for 1 Reel and 3 Stories featuring our insulated bottle. We'd repost the Reel on our own page for 60 days (organic only), no exclusivity needed. Payment is net 15 after the Reel goes live. You'd add #ad per FTC rules, and we send a brief, not a script. Reach me at maya@example.com or @demo_northbay."
+  },
+  {
+    "id": "m02",
+    "channel": "email",
+    "from_email": "dev@example.com",
+    "subject": "Sponsorship for your next organising video",
+    "received": "2026-11-12T11:02:00Z",
+    "body": "Hello, this is Dev from Quillfern Home. Our budget is $2,400 for one YouTube integration (about 60 seconds) in your next home-organisation video. We'd like 3 months of organic reposting on our channels, and a 7-day category exclusivity (no other storage brands in that video's week). Payment is made within 30 days of the video going live. Please include a paid-partnership label. Details: dev@example.com."
+  },
+  {
+    "id": "m03",
+    "channel": "dm",
+    "from_handle": "@demo_tidewell",
+    "from_email": "jo@example.com",
+    "received": "2026-11-13T07:40:00Z",
+    "body": "Hey! Jo here from Tidewell Foods. We'd love 2 Reels for our new oat-snack line, flat fee $950 total, paid net 14 after delivery. Usage: 90 days on our own social pages, organic only. No exclusivity. Disclosure per the platform's paid-partnership tool, please. DM me here, @demo_tidewell, or jo@example.com."
+  },
+  {
+    "id": "m04",
+    "channel": "email",
+    "from_email": "priya@example.com",
+    "subject": "Brightloop x you",
+    "received": "2026-11-13T10:25:00Z",
+    "body": "Hi, Priya from Brightloop Apps. We have a $600 budget for one Reel about our habit-tracking app. We'd also like to run the Reel as paid ads for 6 months and we'd need 30 days of exclusivity (no other habit apps). Payment is net 45. Please add #ad."
+  },
+  {
+    "id": "m05",
+    "channel": "dm",
+    "from_handle": "@demo_marrowfield",
+    "received": "2026-11-13T15:31:00Z",
+    "body": "Hello! Sam at Marrowfield Outdoors here. We'd like to send you our trail backpack (retail value $250) as a gift and give you a 12% affiliate code for your followers. In return we'd like 2 Reels and 2 Stories over the next month. Usage would be organic only on our channels, no exclusivity. Is that something you'd consider?"
+  },
+  {
+    "id": "m06",
+    "channel": "email",
+    "from_email": "lena@example.com",
+    "subject": "Wooden puzzle campaign",
+    "received": "2026-11-14T08:05:00Z",
+    "body": "Hi there, I'm Lena from Pebblecraft Toys. Our offer: $1,200 for 1 Reel and 2 Stories showing our wooden puzzle set. We need 12 months of usage on our social pages and in paid ads, plus 60 days of exclusivity in the toy category. We pay net 30 after posting. Please keep the #ad label visible."
+  },
+  {
+    "id": "m07",
+    "channel": "dm",
+    "from_handle": "@demo_sunrow",
+    "from_email": "teo@example.com",
+    "received": "2026-11-14T12:48:00Z",
+    "body": "Hello! Teo here, Sunrow Coffee. We can pay $400 for 3 posts about our cold-brew cans. We'd use the photos on our own channels for 3 months. Payment is net 60 after the invoice, and we'd like it if you could avoid mentioning other coffee brands for 3 months. #ad as needed."
+  },
+  {
+    "id": "m08",
+    "channel": "email",
+    "from_email": "ravi@example.com",
+    "subject": "Commission: dedicated video",
+    "received": "2026-11-14T14:19:00Z",
+    "body": "Dear creator, Ravi from Vantora Mobile. We would like to commission one dedicated video for $1,500. As part of the agreement, Vantora receives perpetual, worldwide rights to the video in all media, including TV and out-of-home. We also require 12 months of exclusivity against other phone brands. Payment: net 90 after final approval."
+  },
+  {
+    "id": "m09",
+    "channel": "dm",
+    "from_handle": "@demo_lumenworks",
+    "received": "2026-11-15T06:55:00Z",
+    "body": "Hey! We're Lumenworks Studio, a small design-app team. We'd love to gift you a year of our Pro plan and have you post 2 Reels about it. To keep things simple, Lumenworks will own the content outright and can use it in perpetuity. We'd also want you to stay exclusive to us in the design-app category for 6 months."
+  },
+  {
+    "id": "m10",
+    "channel": "email",
+    "from_email": "nadia@example.com",
+    "subject": "Ambassador program",
+    "received": "2026-11-15T09:37:00Z",
+    "body": "Hi! Nadia from Harborline Gear. We're building an ambassador program and can pay $300 for 1 Reel. We'd need partnership-ad access to your account so we can run the Reel as ads for 180 days, which means giving us access to your account for the campaign. Exclusivity for 6 months, and payment is net 120 after the campaign ends."
+  },
+  {
+    "id": "m11",
+    "channel": "email",
+    "from_email": "claims@example.org",
+    "subject": "You have been selected!",
+    "received": "2026-11-15T22:10:00Z",
+    "body": "CONGRATULATIONS! You have been selected for a $5,000 sponsorship from Orbitry Sponsorships. To unlock your payout you must pay a $49 verification fee by gift card or crypto within 24 hours, then confirm your account at https://claim-orbitry.example.net/verify. Reply now! Orbitry Team, claims@example.org"
+  },
+  {
+    "id": "m12",
+    "channel": "dm",
+    "from_handle": "@demo_zenvolt",
+    "from_email": "grants@example.org",
+    "received": "2026-11-16T03:21:00Z",
+    "body": "Hello! We're Zenvolt Rewards. You've been chosen to receive a free $2,000 creator grant. To claim it, log in at https://zenvolt-grants.example.com/claim with your account password, and do it today only. Questions? @demo_zenvolt or grants@example.org."
+  }
+]

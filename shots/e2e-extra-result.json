@@ -1,0 +1,80 @@
+{
+  "off": {
+    "route": "ON_DEVICE",
+    "col": "worth",
+    "counter": "on-device: 1· cloud: 0· cost $0.00"
+  },
+  "coachOff": {
+    "btn": true,
+    "msg": "The coach needs a connection."
+  },
+  "routes": [
+    "IN_CLOUD",
+    "IN_CLOUD",
+    "IN_CLOUD",
+    "IN_CLOUD",
+    "IN_CLOUD",
+    "IN_CLOUD",
+    "IN_CLOUD",
+    "IN_CLOUD",
+    "IN_CLOUD",
+    "IN_CLOUD",
+    "IN_CLOUD",
+    "IN_CLOUD"
+  ],
+  "coach": {
+    "err": null
+  },
+  "log": [
+    {
+      "name": "offline indicator shown",
+      "pass": true,
+      "extra": ""
+    },
+    {
+      "name": "offline triage completes ON_DEVICE",
+      "pass": true,
+      "extra": "{\"route\":\"ON_DEVICE\",\"col\":\"worth\",\"counter\":\"on-device: 1· cloud: 0· cost $0.00\"}"
+    },
+    {
+      "name": "coach disabled offline with \"needs a connection\"",
+      "pass": true,
+      "extra": "{\"btn\":true,\"msg\":\"The coach needs a connection.\"}"
+    },
+    {
+      "name": "no-Nano banner shown",
+      "pass": true,
+      "extra": ""
+    },
+    {
+      "name": "cloud requests were made for extraction",
+      "pass": true,
+      "extra": "13 POSTs"
+    },
+    {
+      "name": "no demo email or handle in any request body",
+      "pass": true,
+      "extra": "none"
+    },
+    {
+      "name": "no email/phone/handle pattern in any request body",
+      "pass": true,
+      "extra": "0 hits"
+    },
+    {
+      "name": "every card is IN_CLOUD or RULES_ONLY, none ON_DEVICE",
+      "pass": true,
+      "extra": "IN_CLOUD"
+    },
+    {
+      "name": "coach request went to the coach model",
+      "pass": true,
+      "extra": "https://firebasevertexai.googleapis.com/v1beta/projects/<project>/models/gemini-3.5-flash-lite:generateContent"
+    },
+    {
+      "name": "coach request has DealTerms keys and no contact detail",
+      "pass": true,
+      "extra": ""
+    }
+  ]
+}

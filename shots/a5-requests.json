@@ -1,0 +1,27 @@
+{
+ "count": 13,
+ "routes": [
+  "IN_CLOUD",
+  "IN_CLOUD",
+  "IN_CLOUD",
+  "IN_CLOUD",
+  "IN_CLOUD",
+  "IN_CLOUD",
+  "IN_CLOUD",
+  "IN_CLOUD",
+  "IN_CLOUD",
+  "IN_CLOUD",
+  "IN_CLOUD",
+  "IN_CLOUD"
+ ],
+ "sample": [
+  {
+   "url": "https://firebasevertexai.googleapis.com/v1beta/projects/<project>/models/gemini-3.5-flash-lite:generateContent",
+   "body": "{\"generationConfig\":{\"responseMimeType\":\"application/json\",\"responseSchema\":{\"type\":\"object\",\"properties\":{\"brand_alias\":{\"type\":\"string\",\"nullable\":false},\"paid\":{\"type\":\"boolean\",\"nullable\":false},\"rate_amount\":{\"type\":\"number\",\"nullable\":false},\"currency\":{\"type\":\"string\",\"enum\":[\"USD\",\"EUR\",\"GBP\",\"MYR\",\"OTHER\",\"NONE\"],\"nullable\":false},\"deliverables\":{\"type\":\"array\",\"items\":{\"type\":\"string\",\"enum\":[\"reel\",\"story\",\"post\",\"video\",\"short\",\"live\",\"ugc\",\"other\"],\"nullable\":false},\"nullable\":false},\"usage_perpetual\":{\"type\":\"boolean\",\"nullable\":false},\"usage_months\":{\"type\":\"integer\",\"nullable\":false},\"usage_media\":{\"type\":\"string\",\"enum\":[\"organic_only\",\"paid_ads\",\"all_media\",\"unspecified\"],\"nullable\":false},\"exclusivity_days\":{\"type\":\"integer\",\"nullable\":false},\"payment_days\":{\"type\":\"integer\",\"nullable\":false},\"disclosure_required\":{\"type\":\"boolean\",\"nullable\":false},\"red_flags\":{\"type\""
+  },
+  {
+   "url": "https://firebasevertexai.googleapis.com/v1beta/projects/<project>/models/gemini-3.5-flash-lite:generateContent",
+   "body": "{\"generationConfig\":{\"responseMimeType\":\"application/json\",\"responseSchema\":{\"type\":\"object\",\"properties\":{\"brand_alias\":{\"type\":\"string\",\"nullable\":false},\"paid\":{\"type\":\"boolean\",\"nullable\":false},\"rate_amount\":{\"type\":\"number\",\"nullable\":false},\"currency\":{\"type\":\"string\",\"enum\":[\"USD\",\"EUR\",\"GBP\",\"MYR\",\"OTHER\",\"NONE\"],\"nullable\":false},\"deliverables\":{\"type\":\"array\",\"items\":{\"type\":\"string\",\"enum\":[\"reel\",\"story\",\"post\",\"video\",\"short\",\"live\",\"ugc\",\"other\"],\"nullable\":false},\"nullable\":false},\"usage_perpetual\":{\"type\":\"boolean\",\"nullable\":false},\"usage_months\":{\"type\":\"integer\",\"nullable\":false},\"usage_media\":{\"type\":\"string\",\"enum\":[\"organic_only\",\"paid_ads\",\"all_media\",\"unspecified\"],\"nullable\":false},\"exclusivity_days\":{\"type\":\"integer\",\"nullable\":false},\"payment_days\":{\"type\":\"integer\",\"nullable\":false},\"disclosure_required\":{\"type\":\"boolean\",\"nullable\":false},\"red_flags\":{\"type\""
+  }
+ ]
+}

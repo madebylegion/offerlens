@@ -1,0 +1,66 @@
+{
+  "board": {
+    "counter": "on-device: 12· cloud: 0· cost $0.00",
+    "routes": [
+      "ON_DEVICE",
+      "ON_DEVICE",
+      "ON_DEVICE",
+      "ON_DEVICE",
+      "ON_DEVICE",
+      "ON_DEVICE",
+      "ON_DEVICE",
+      "ON_DEVICE",
+      "ON_DEVICE",
+      "ON_DEVICE",
+      "ON_DEVICE",
+      "ON_DEVICE"
+    ],
+    "cols": [
+      3,
+      4,
+      5
+    ],
+    "cards": [
+      "Northbay Bottle Co, worth it, score 100",
+      "Quillfern Home, worth it, score 100",
+      "Tidewell Foods, worth it, score 100",
+      "Brightloop Apps, negotiate, score 83",
+      "Sunrow Coffee, negotiate, score 72",
+      "Pebblecraft Toys, negotiate, score 71",
+      "Marrowfield Outdoors, negotiate, score 55",
+      "Harborline Gear, walk away, score 34",
+      "Vantora Mobile, walk away, score 7",
+      "Lumenworks Studio, walk away, score 0",
+      "Orbitry Sponsorships, walk away, score 0",
+      "Zenvolt Rewards, walk away, score 0"
+    ]
+  },
+  "secs": 78,
+  "log": [
+    {
+      "name": "12 cards on board",
+      "pass": true,
+      "extra": "78s"
+    },
+    {
+      "name": "all 12 read ON_DEVICE",
+      "pass": true,
+      "extra": "ON_DEVICE,ON_DEVICE,ON_DEVICE,ON_DEVICE,ON_DEVICE,ON_DEVICE,ON_DEVICE,ON_DEVICE,ON_DEVICE,ON_DEVICE,ON_DEVICE,ON_DEVICE"
+    },
+    {
+      "name": "counter 12 on-device / 0 cloud",
+      "pass": true,
+      "extra": "on-device: 12· cloud: 0· cost $0.00"
+    },
+    {
+      "name": "columns 3/4/5",
+      "pass": true,
+      "extra": "3/4/5"
+    },
+    {
+      "name": "shared panel says nothing left",
+      "pass": true,
+      "extra": ""
+    }
+  ]
+}

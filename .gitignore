@@ -1,0 +1,8 @@
+node_modules
+dist
+firebase.local.json
+.env.local
+.env.*.local
+chrome-test-profile
+*.log
+coverage
