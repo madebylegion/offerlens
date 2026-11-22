@@ -41,6 +41,10 @@
 html {
   -webkit-text-size-adjust: 100%;
 }
+/* a modal is open (drawer or dialog): only the modal scrolls, not the page behind it, so one scrollbar shows, not two */
+html:has(.drawer, dialog[open]) {
+  overflow: hidden;
+}
 body {
   margin: 0;
   background: var(--paper);
