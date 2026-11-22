@@ -965,6 +965,19 @@ mark {
   justify-self: end;
   border-top-right-radius: var(--r-sm);
 }
+.bubble .md {
+  white-space: normal;
+}
+.bubble .md p,
+.bubble .md ul {
+  margin: 0 0 var(--s2);
+}
+.bubble .md ul {
+  padding-left: 1.25em;
+}
+.bubble .md > :last-child {
+  margin-bottom: 0;
+}
 .bubble .who {
   display: flex;
   align-items: center;

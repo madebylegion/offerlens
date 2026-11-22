@@ -2,6 +2,7 @@ import { cloudConfigured } from './firebase';
 import { FLAG_LABEL, FLAG_WHY } from './rank';
 import { daysText, deliverablesText, esc, highlight, money, payText, usageText, when } from './format';
 import { icon, logo } from './icons';
+import { mdToHtml } from './md';
 import type { Row, State } from './state';
 import type { Column, Route, Triage } from './types';
 
@@ -206,7 +207,7 @@ function coachTab(r: Row, s: State): string {
       : ''
   }
   ${r.coachError ? `<p class="err" role="alert">${esc(r.coachError)}</p>` : ''}
-  <div class="chat" aria-live="polite">${(c?.turns ?? []).map((m) => `<div class="bubble ${m.from}" data-source="${esc(m.source ?? '')}"><div class="who">${m.from === 'coach' ? icon.cloud + 'Coach (cloud)' : 'You'}</div>${esc(m.text)}</div>`).join('')}${r.coachBusy && c ? `<div class="bubble coach"><div class="who">${icon.cloud}Coach (cloud)</div><span class="spin" role="status" aria-label="Thinking"></span></div>` : ''}</div>
+  <div class="chat" aria-live="polite">${(c?.turns ?? []).map((m) => `<div class="bubble ${m.from}" data-source="${esc(m.source ?? '')}"><div class="who">${m.from === 'coach' ? icon.cloud + 'Coach (cloud)' : 'You'}</div>${m.from === 'coach' ? `<div class="md">${mdToHtml(m.text)}</div>` : esc(m.text)}</div>`).join('')}${r.coachBusy && c ? `<div class="bubble coach"><div class="who">${icon.cloud}Coach (cloud)</div><span class="spin" role="status" aria-label="Thinking"></span></div>` : ''}</div>
   ${
     c
       ? `<div class="composer"><div class="quick">${['Ask for a higher fee', 'Cut usage to 3 months', 'Make it friendlier', 'Shorten it'].map((q) => `<button data-act="coach-quick" data-id="${esc(r.message.id)}" data-q="${esc(q)}" ${gate || r.coachBusy ? 'disabled' : ''}>${q}</button>`).join('')}</div>
