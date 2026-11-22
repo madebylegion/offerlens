@@ -50,7 +50,7 @@ npm run preview        # http://127.0.0.1:4173
 
 ### Optional: the cloud path
 
-The cloud is wired but needs a Firebase project. Copy `firebase.local.example.json` to `firebase.local.json` (git-ignored) and fill in your web app config and a reCAPTCHA Enterprise site key. Without that file the app runs fully on-device with a placeholder config.
+The cloud is wired but needs a Firebase project. Make a git-ignored `firebase.local.json` from the example file `firebase.local.example.json`. Fill in your web app config and a reCAPTCHA Enterprise site key. Without that file the app runs fully on-device with a placeholder config.
 
 **App Check.** The app registers `ReCaptchaEnterpriseProvider` with your site key. Under `npm start` (Vite dev server) it switches to the App Check **debug provider**: put the token in a git-ignored `.env.local` as `VITE_APPCHECK_DEBUG_TOKEN=...` and register that token in the Firebase console. Never commit a token, key or config. App Check enforcement for AI Logic is on in our project, so a call without a valid token is rejected; OfferLens shows "The cloud rejected this request" instead of failing silently.
 
@@ -109,7 +109,7 @@ scripts/           Chrome-driven end-to-end and eval runs
 
 ## Built during the submission period (11-30 Nov 2026)
 
-All of the code, tests, demo data and design in this repository were written for this challenge. The first commit is dated 17 Nov 2026 and every commit falls inside the submission period. No code was copied from earlier projects. Dependencies are the Firebase JS SDK, Vite, TypeScript, Vitest, and the Instrument Sans and IBM Plex Mono fonts (both under the SIL Open Font License, bundled through `@fontsource`).
+All of the code, tests, demo data and design in this repository were written for this challenge. Every commit in this repository falls inside the submission period. No code was copied from earlier projects. Dependencies are the Firebase JS SDK, Vite, TypeScript, Vitest, and the Instrument Sans and IBM Plex Mono fonts (both under the SIL Open Font License, bundled through `@fontsource`).
 
 ## Licence
 

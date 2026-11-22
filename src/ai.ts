@@ -10,7 +10,7 @@ import { EXTRACT_SCHEMA, extractionPrompt, parseModelJson, toSdkSchema } from '.
 import type { DealTerms, Route } from './types';
 
 export const EXTRACT_CLOUD_MODEL = 'gemini-3.5-flash-lite';
-export const COACH_MODEL = 'gemini-3.5-flash-lite'; // gemini-3.8-flash hangs (no reply in 60 s) on this path, see BUILD.md
+export const COACH_MODEL = 'gemini-3.5-flash-lite'; // gemini-3.8-flash gave no reply in 60 s on this path in our tests
 
 export type Availability = 'available' | 'downloadable' | 'downloading' | 'unavailable' | 'missing';
 
