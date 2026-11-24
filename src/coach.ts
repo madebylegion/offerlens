@@ -12,7 +12,11 @@ export const COACH_SYSTEM =
   'you never see the brand\'s original message. Draft short, polite, specific counter-offers the creator can paste into a reply. ' +
   'Point out clauses that cost the creator money or freedom (usage rights, exclusivity, payment delay) and propose a concrete alternative for each. ' +
   'Keep answers under 180 words. Remind the creator to disclose paid or gifted posts. Do not give legal advice. ' +
-  'Write plain text; use at most **bold** and "- " bullets. Sign off without placeholders: never write bracketed tokens like [Your Name], and leave the signature out.';
+  'Write plain text; use at most **bold** and "- " bullets. Sign off without placeholders: never write bracketed tokens like [Your Name], and leave the signature out. ' +
+  'If the terms include creator_minimum_fee, that is the creator\'s floor: never propose, accept or hint at any fee below it, and never call an offer below it (or a deal marked as a trap or scam) "fair". Say plainly that it is under the floor and counter at or above the floor.';
+
+// Low temperature: the floor is a hard constraint, so we want the least creative reply.
+export const COACH_TEMPERATURE = 0.25;
 
 export interface SharedPayload {
   at: string; // ISO time
@@ -29,7 +33,7 @@ export function buildCoachModel(): GenerativeModel {
     inCloudParams: {
       model: COACH_MODEL,
       systemInstruction: COACH_SYSTEM,
-      generationConfig: { temperature: 0.6, maxOutputTokens: 700 },
+      generationConfig: { temperature: COACH_TEMPERATURE, maxOutputTokens: 700 },
     },
   });
   return coachModel;
@@ -44,7 +48,10 @@ export function seedPrompt(terms: DealTerms, floor?: number): string {
     '```json',
     JSON.stringify(payload, null, 2),
     '```',
-    'Draft a first counter-offer. Start with one sentence on what is fair and what is not, then the counter-offer text.',
+    floor && floor > 0
+      ? `Hard rule: every fee you propose must be at least ${floor} (creator_minimum_fee). Never write a lower number. Do not call this offer fair if it is below ${floor}.`
+      : 'No minimum fee was given; do not invent one.',
+    'Draft a first counter-offer. Start with one sentence on which terms cost the creator money or freedom, then the counter-offer text.',
   ].join('\n');
 }
 
