@@ -12,7 +12,7 @@ Built for the #BuildHybridAI challenge with Firebase AI Logic hybrid inference.
 
 A creator with 10k to 500k followers gets brand offers in a stream of DMs and emails. The costly terms hide in the chat: "gifted" deals that pay nothing, usage rights that run forever or cover all media, months of exclusivity, net-90 payment, and fake "brand managers" who ask for a fee first. Reading every message carefully takes time. Pasting the messages into a cloud chatbot leaks rate cards and contacts, and a per-message cloud price grows with the inbox. Paid and gifted posts also carry a disclosure duty (FTC 16 CFR 255.5), which OfferLens reminds you about.
 
-## How Firebase AI Logic hybrid inference is used
+## Hybrid inference layout (Firebase AI Logic)
 
 There are two Firebase `GenerativeModel` instances. Which call runs where is decided in one file, [`src/ai.ts`](src/ai.ts) (and [`src/coach.ts`](src/coach.ts) for the coach).
 
@@ -20,7 +20,7 @@ There are two Firebase `GenerativeModel` instances. Which call runs where is dec
 |---|---|---|---|
 | Read each message into a `DealTerms` JSON form | `PREFER_ON_DEVICE` | On the laptop with Gemini Nano. Cloud (`gemini-3.5-flash-lite`) only when Nano is missing. | Triage runs on every message, so on-device is free per message, private, and works offline. |
 | Same, with **Private mode** on | `ONLY_ON_DEVICE` | On the laptop, always. If Nano is not ready the app shows "needs on-device AI" and sends nothing. | The user controls what may leave the machine. The model instance is built on a Firebase app with no App Check, so nothing in that path can reach the network. |
-| Negotiation coach | `ONLY_IN_CLOUD` (`gemini-3.5-flash-lite`, `startChat`) | Cloud | A multi-turn chat is not supported on-device. It receives only the extracted `DealTerms` JSON (and an optional minimum fee), never the message, handle or email. |
+| Negotiation coach | `ONLY_IN_CLOUD`, chat via `gemini-3.5-flash-lite` (`startChat`) | Cloud | A multi-turn chat is not supported on-device. It receives only the extracted `DealTerms` JSON (and an optional minimum fee), never the message, handle or email. |
 | Mask contacts, check numbers, flag scams, score and rank | plain TypeScript | On the laptop | The model never decides alone. |
 
 Details a judge may want to check:
@@ -34,7 +34,7 @@ Details a judge may want to check:
 
 ## Run it (judges)
 
-Needs Node 20 or newer and desktop Chrome with Gemini Nano. Tested on Chrome 157 stable, with no flag set.
+Needs Node 20+ and desktop Chrome (tested on Chrome 157 stable, default flags, with Gemini Nano enabled).
 
 ```bash
 npm ci
@@ -52,17 +52,17 @@ npm run preview        # http://127.0.0.1:4173
 
 The cloud is wired but needs a Firebase project. Make a git-ignored `firebase.local.json` from the example file `firebase.local.example.json`. Fill in your web app config and a reCAPTCHA Enterprise site key. Without that file the app runs fully on-device with a placeholder config.
 
-**App Check.** The app registers `ReCaptchaEnterpriseProvider` with your site key. Under `npm start` (Vite dev server) it switches to the App Check **debug provider**: put the token in a git-ignored `.env.local` as `VITE_APPCHECK_DEBUG_TOKEN=...` and register that token in the Firebase console. Never commit a token, key or config. App Check enforcement for AI Logic is on in our project, so a call without a valid token is rejected; OfferLens shows "The cloud rejected this request" instead of failing silently.
+**App Check.** The app registers `ReCaptchaEnterpriseProvider` with your site key. Under `npm start` (Vite dev server) it switches to the App Check **debug provider**: store `VITE_APPCHECK_DEBUG_TOKEN=...` inside `.env.local` (git-ignored) and allowlist it inside your Firebase project console. Never commit a token, key or config. App Check enforcement for AI Logic is on in our project, so a call without a valid token is rejected; OfferLens shows "The cloud rejected this request" instead of failing silently.
 
 ### Tests
 
 ```bash
-npm test               # unit tests, no browser, SDK mocked
+npm test               # Vitest unit suite (mocked SDK, headless)
 npm run eval           # needs preview running + Chrome with the model, see below
 npm run e2e            # 12 demo messages in real Chrome, ON_DEVICE
 ```
 
-`scripts/e2e.mjs`, `e2e-extra.mjs`, `eval.mjs` drive a real Chrome over the DevTools protocol (Chrome started with `--remote-debugging-port=<port>`); pass the port as the first argument.
+`scripts/e2e.mjs`, `e2e-extra.mjs`, and `eval.mjs` connect to a live Chrome instance via CDP (launch Chrome using `--remote-debugging-port=<port>` and pass that port as arg 1).
 
 ## Measured results
 
@@ -107,7 +107,7 @@ scripts/           Chrome-driven end-to-end and eval runs
 - Currency amounts written in words ("five hundred dollars") are not reliably read. Deliverable counts can be over-counted when a deliverable word repeats in a payment sentence.
 - It is a triage aid, not legal advice.
 
-## Built during the submission period (11-30 Nov 2026)
+## Fresh build for #BuildHybridAI (Nov 2026)
 
 All of the code, tests, demo data and design in this repository were written for this challenge. Every commit in this repository falls inside the submission period. No code was copied from earlier projects. Dependencies are the Firebase JS SDK, Vite, TypeScript, Vitest, and the Instrument Sans and IBM Plex Mono fonts (both under the SIL Open Font License, bundled through `@fontsource`).
 
